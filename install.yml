@@ -6,7 +6,7 @@
     ansible.builtin.apt:
       name: "apt-transport-https"
       state: "latest"
-      update_cahe: true
+      update_cache: true
   - name: "Добавляем ключ репо Elastic"
     shell: sudo wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add 
   - name: "Добавляем пакеты в систему"
@@ -15,19 +15,19 @@
     ansible.builtin.apt:
       name: "elasticsearch"
       state: "latest"
-      update_cahe: true
+      update_cache: true
   - name: "Устанавливаем Kibana"
     ansible.builtin.apt:
       name: "kibana"
       state: "latest"
-      update_cahe: true
+      update_cache: true
   - name: "Устанавливаем Logstash"
     ansible.builtin.apt:
       name: "logstash"
       state: "latest"
-      update_cahe: true
+      update_cache: true
   - name: "Устанавливаем Nginx"
     ansible.builtin.apt:
       name: "Nginx"
       state: "latest"
-      update_cahe: true
+      update_cache: true
