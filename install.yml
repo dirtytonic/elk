@@ -28,6 +28,6 @@
       update_cache: true
   - name: "Устанавливаем Nginx"
     ansible.builtin.apt:
-      name: "Nginx"
+      name: "nginx"
       state: "latest"
       update_cache: true
